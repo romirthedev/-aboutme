@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosaurs World</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2e8b57;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+        }
+        h1 {
+            color: #2e8b57;
+            text-align: center;
+        }
+        .dinosaur {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .dino-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 30%;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .dino-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the World of Dinosaurs!</h1>
+    </header>
+
+    <nav>
+        <a href="#trex">T-Rex</a>
+        <a href="#triceratops">Triceratops</a>
+        <a href="#velociraptor">Velociraptor</a>
+    </nav>
+
+    <section class="dinosaur" id="trex">
+        <div class="dino-card">
+            <h2>Tyrannosaurus Rex</h2>
+            <img src="https://example.com/trex.jpg" alt="T-Rex">
+            <p>The Tyrannosaurus Rex is one of the largest and most famous dinosaurs.</p>
+        </div>
+    </section>
+
+    <section class="dinosaur" id="triceratops">
+        <div class="dino-card">
+            <h2>Triceratops</h2>
+            <img src="https://example.com/triceratops.jpg" alt="Triceratops">
+            <p>Triceratops had a large frill and three horns, making it a unique dinosaur.</p>
+        </div>
+    </section>
+
+    <section class="dinosaur" id="velociraptor">
+        <div class="dino-card">
+            <h2>Velociraptor</h2>
+            <img src="https://example.com/velociraptor.jpg" alt="Velociraptor">
+            <p>The Velociraptor was a fast and intelligent predator, known for its agility.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Dinosaurs World
+    </footer>
+
+</body>
+</html>
