@@ -1,149 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Romir Patel Portfolio</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romir Patel - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(180deg, #0a0f2c, #8a8a8a);
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, darkblue, grey);
+            color: white;
+            text-align: center;
+            transition: background-color 0.5s ease-in-out;
+        }
 
-    header {
-      font-size: 3em;
-      margin-bottom: 20px;
-    }
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+        }
 
-    nav {
-      margin-bottom: 30px;
-    }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
 
-    nav a {
-      text-decoration: none;
-      color: white;
-      font-size: 1.5em;
-      margin: 0 15px;
-      padding: 10px 20px;
-      display: inline-block;
-      border: 2px solid transparent;
-      transition: all 0.3s ease;
-    }
+        nav ul li {
+            margin: 0 1rem;
+        }
 
-    nav a:hover {
-      border-color: yellow;
-      color: yellow;
-      transform: scale(1.1);
-    }
+        nav ul li button {
+            padding: 10px 20px;
+            background: linear-gradient(45deg, yellow, orange);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
 
-    section {
-      margin: 40px 0;
-    }
+        nav ul li button:hover {
+            background: linear-gradient(45deg, orange, red);
+            transform: scale(1.1);
+        }
 
-    section h2 {
-      font-size: 2.5em;
-      margin-bottom: 15px;
-    }
+        section {
+            display: none;
+            padding: 20px;
+            text-align: center;
+        }
 
-    .timeline {
-      width: 80%;
-      margin: 0 auto;
-      text-align: left;
-    }
+        .active {
+            display: block;
+        }
 
-    .timeline-item {
-      margin: 20px 0;
-      padding: 15px;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s ease;
-    }
+        .timeline {
+            margin-top: 20px;
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-    .timeline-item:hover {
-      background-color: rgba(255, 255, 255, 0.2);
-    }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background: yellow;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
 
-    .skills {
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      margin-top: 40px;
-    }
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+        }
 
-    .skill-item {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 8px;
-      padding: 10px 20px;
-      margin: 10px;
-      transition: transform 0.3s ease;
-    }
+        .container.left {
+            left: 0;
+        }
 
-    .skill-item:hover {
-      transform: scale(1.1);
-    }
+        .container.right {
+            left: 50%;
+        }
 
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-    }
-  </style>
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background: yellow;
+            border-radius: 50%;
+            top: 15px;
+        }
+
+        .container.right::after {
+            left: -10px;
+        }
+
+        .container p {
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
+    <h1>Romir Patel</h1>
+    <h3>CEO | Founder | Innovator | Tech Enthusiast</h3>
 
-  <header>ROMIR PATEL</header>
-  <p>CEO | Founder | Innovator | Tech Enthusiast</p>
+    <nav>
+        <ul>
+            <li><button onclick="showSection('about')">About</button></li>
+            <li><button onclick="showSection('experience')">Experience</button></li>
+            <li><button onclick="showSection('skills')">Skills</button></li>
+        </ul>
+    </nav>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-  </nav>
+    <section id="about" class="active">
+        <h2>About Me</h2>
+        <p>Hello, I'm Romir Patel, a passionate tech innovator and entrepreneur, leading projects with a vision for a better tomorrow!</p>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello, I'm Romir Patel, a passionate tech innovator and entrepreneur, leading projects with a vision for a better tomorrow!</p>
-  </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="container left">
+                <p><strong>Helping Hands Corporation</strong> - Founder, CEO (Sep 2022 - Present)</p>
+                <p>Founded and led a 501(c)(3) nonprofit organization with over six figures in grants, impacting 2,500+ people globally.</p>
+            </div>
+            <div class="container right">
+                <p><strong>Benevolentia LLC</strong> - Founder, CEO (Jan 2023 - Present)</p>
+                <p>Developed a platform for job seekers without college degrees using MongoDB, NodeJS, Express, and ReactJS.</p>
+            </div>
+            <div class="container left">
+                <p><strong>ResearchHive</strong> - Founder, CEO (Jan 2024 - Present)</p>
+                <p>Launched a platform for co-author collaboration in research, fostering a national community with MongoDB, Express, React, and NodeJS.</p>
+            </div>
+        </div>
+    </section>
 
-  <section id="experience">
-    <h2>My Journey</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Helping Hands Corporation</h3>
-        <p>Backend Developer Intern (April 2023 - Present)</p>
-        <p>Developed backend systems, improved infrastructure, and supported ongoing projects with MongoDB, Node.js, and Express.js.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Startup Founder</h3>
-        <p>Founded multiple startups focusing on fintech and AI-driven solutions to modern problems. Created business models, led technical teams, and worked on product-market fit.</p>
-      </div>
-    </div>
-  </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>HTML/CSS, JavaScript, Python, MongoDB, ReactJS, NodeJS, Express, SQL</p>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill-item">HTML/CSS</div>
-      <div class="skill-item">JavaScript</div>
-      <div class="skill-item">Node.js</div>
-      <div class="skill-item">ReactJS</div>
-      <div class="skill-item">MongoDB</div>
-      <div class="skill-item">Python</div>
-    </div>
-  </section>
-
-  <footer>
-    © 2024 Romir Patel. Galactic Portfolio.
-  </footer>
-
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
 </body>
 </html>
