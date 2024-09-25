@@ -3,110 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinosaurs World</title>
+    <title>Romir Patel's Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('https://example.com/galaxy-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
         }
         header {
-            background-color: #2e8b57;
-            color: white;
-            padding: 20px 0;
             text-align: center;
+            padding: 50px 0;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
         }
         nav {
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.8);
             padding: 10px;
             text-align: center;
         }
         nav a {
             color: white;
-            padding: 14px 20px;
+            margin: 0 20px;
             text-decoration: none;
             text-transform: uppercase;
+            font-size: 1.1rem;
+            transition: color 0.3s;
         }
         nav a:hover {
-            background-color: #575757;
+            color: #ffd700;
         }
-        section {
-            padding: 20px;
-            margin: 10px;
-        }
-        h1 {
-            color: #2e8b57;
+        .content {
+            padding: 50px;
             text-align: center;
         }
-        .dinosaur {
+        .content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        .timeline {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
         }
-        .dino-card {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            width: 30%;
-            padding: 10px;
-            margin: 10px;
-            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #ffd700;
+            left: 50%;
+            transform: translateX(-50%);
         }
-        .dino-card img {
-            max-width: 100%;
+        .timeline-item {
+            background: rgba(0, 0, 0, 0.7);
             border-radius: 10px;
+            padding: 20px;
+            width: 45%;
+            margin: 20px 0;
+            position: relative;
+        }
+        .timeline-item:nth-child(odd) {
+            left: 55%;
+        }
+        .timeline-item:nth-child(even) {
+            left: 0;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background: #ffd700;
+            border-radius: 50%;
+            left: -10px;
+        }
+        .timeline-item:nth-child(odd)::before {
+            left: -10px;
+        }
+        .timeline-item:nth-child(even)::before {
+            right: -10px;
         }
         footer {
-            background-color: #333;
-            color: white;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            color: #fff;
+            position: relative;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .floating {
+            animation: float 4s ease-in-out infinite;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to the World of Dinosaurs!</h1>
-    </header>
+<header>
+    <h1>Romir Patel</h1>
+    <p>CEO | Founder | Innovator</p>
+</header>
 
-    <nav>
-        <a href="#trex">T-Rex</a>
-        <a href="#triceratops">Triceratops</a>
-        <a href="#velociraptor">Velociraptor</a>
-    </nav>
+<nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <section class="dinosaur" id="trex">
-        <div class="dino-card">
-            <h2>Tyrannosaurus Rex</h2>
-            <img src="https://example.com/trex.jpg" alt="T-Rex">
-            <p>The Tyrannosaurus Rex is one of the largest and most famous dinosaurs.</p>
+<section class="content" id="about">
+    <h2>About Me</h2>
+    <p>Welcome to my portfolio! I'm Romir Patel, a tech enthusiast, entrepreneur, and student. My journey has been driven by my passion for technology, leadership, and innovation.</p>
+</section>
+
+<section class="content" id="experience">
+    <h2>Work Experience</h2>
+    <div class="timeline">
+        <div class="timeline-item floating">
+            <h3>Helping Hands Corporation - Founder, CEO</h3>
+            <p>Sep 2022 - Present</p>
+            <p>Founded a 501(c)(3) nonprofit organization, raised six figures in grants, and led the development of multiple global programs.</p>
         </div>
-    </section>
-
-    <section class="dinosaur" id="triceratops">
-        <div class="dino-card">
-            <h2>Triceratops</h2>
-            <img src="https://example.com/triceratops.jpg" alt="Triceratops">
-            <p>Triceratops had a large frill and three horns, making it a unique dinosaur.</p>
+        <div class="timeline-item floating">
+            <h3>Benevolentia LLC - Founder, CEO</h3>
+            <p>Jan 2023 - Present</p>
+            <p>Created a web platform to connect job seekers without college degrees with employers, utilizing AI to recommend opportunities.</p>
         </div>
-    </section>
-
-    <section class="dinosaur" id="velociraptor">
-        <div class="dino-card">
-            <h2>Velociraptor</h2>
-            <img src="https://example.com/velociraptor.jpg" alt="Velociraptor">
-            <p>The Velociraptor was a fast and intelligent predator, known for its agility.</p>
+        <div class="timeline-item floating">
+            <h3>ResearchHive - Founder, CEO</h3>
+            <p>Jan 2024 - Present</p>
+            <p>Launched a platform for research collaboration across educational levels, supporting peer review and co-authorship.</p>
         </div>
-    </section>
+        <div class="timeline-item floating">
+            <h3>Arizona State University - Researcher</h3>
+            <p>Jan 2016</p>
+            <p>Developed an affordable motion capture system using C, JavaScript, and Arduino, contributing to the open-source initiative.</p>
+        </div>
+    </div>
+</section>
 
-    <footer>
-        &copy; 2024 Dinosaurs World
-    </footer>
+<section class="content" id="skills">
+    <h2>Skills</h2>
+    <p>Advanced: SQL, JavaScript, HTML/CSS, Python, C, Java</p>
+    <p>Tools: MongoDB, MySQL, Angular, React, Node, Express, GitHub, Azure, AWS</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Romir Patel. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
