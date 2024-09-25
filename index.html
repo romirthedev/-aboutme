@@ -3,174 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romir Patel's Portfolio</title>
+    <title>My Portfolio</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background: url('https://example.com/galaxy-bg.jpg') no-repeat center center fixed;
+            font-family: Arial, sans-serif;
+            background: url('https://example.com/galaxy-background.jpg') no-repeat center center fixed;
             background-size: cover;
             color: white;
+            margin: 0;
+            padding: 0;
         }
+
         header {
-            text-align: center;
-            padding: 50px 0;
-            background: rgba(0, 0, 0, 0.7);
-        }
-        header h1 {
-            font-size: 3rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-        header p {
-            font-size: 1.2rem;
-            font-style: italic;
-        }
-        nav {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 1.1rem;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #ffd700;
-        }
-        .content {
-            padding: 50px;
-            text-align: center;
-        }
-        .content h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-        }
-        .timeline {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-        }
-        .timeline::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: #ffd700;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .timeline-item {
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-            padding: 20px;
-            width: 45%;
-            margin: 20px 0;
-            position: relative;
-        }
-        .timeline-item:nth-child(odd) {
-            left: 55%;
-        }
-        .timeline-item:nth-child(even) {
-            left: 0;
-        }
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            top: 20px;
-            width: 20px;
-            height: 20px;
-            background: #ffd700;
-            border-radius: 50%;
-            left: -10px;
-        }
-        .timeline-item:nth-child(odd)::before {
-            left: -10px;
-        }
-        .timeline-item:nth-child(even)::before {
-            right: -10px;
-        }
-        footer {
             background: rgba(0, 0, 0, 0.8);
             padding: 20px;
             text-align: center;
-            color: #fff;
-            position: relative;
         }
-        footer p {
+
+        header h1 {
             margin: 0;
-            font-size: 1rem;
         }
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
         }
-        .floating {
-            animation: float 4s ease-in-out infinite;
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #fff;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: #fff;
+            border: 4px solid #fff;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-item h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Romir Patel</h1>
-    <p>CEO | Founder | Innovator</p>
-</header>
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section class="content" id="about">
-    <h2>About Me</h2>
-    <p>Welcome to my portfolio! I'm Romir Patel, a tech enthusiast, entrepreneur, and student. My journey has been driven by my passion for technology, leadership, and innovation.</p>
-</section>
-
-<section class="content" id="experience">
-    <h2>Work Experience</h2>
-    <div class="timeline">
-        <div class="timeline-item floating">
-            <h3>Helping Hands Corporation - Founder, CEO</h3>
-            <p>Sep 2022 - Present</p>
-            <p>Founded a 501(c)(3) nonprofit organization, raised six figures in grants, and led the development of multiple global programs.</p>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="education">
+        <h2>Education</h2>
+        <p>Basha High School, Chandler, AZ</p>
+        <p>High School Diploma, AP Scholar with Honor</p>
+        <p>Focus in Computer Science, HOSA VP, Speech & Debate Captain, Helping Hands Club President, FBLA Competitor</p>
+        <p>Cumulative GPA: 4.0/4.0</p>
+        <p>Relevant Coursework: AP Computer Science Principles, AP Calculus BC, AP Physics C: Mechanics, Honors Python, Analysis of Algorithms (Princeton University)</p>
+    </section>
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Helping Hands Corporation, Gilbert, AZ</h3>
+                <p>Founder, CEO, Board Chairman (Sep 2022 - Present)</p>
+                <ul>
+                    <li>Founded and led a 501(c)(3) nonprofit organization, managing all financial aspects, including bookkeeping and tax filing.</li>
+                    <li>Raised over six figures in grants and spearheaded the Cyber Division, providing free Python courses to hundreds of global participants.</li>
+                    <li>Developed a global English tutoring program for individuals in third-world countries and facilitated volunteer connections to local facilities.</li>
+                    <li>Directed a team of 200+ volunteers, impacting over 2,500 individuals and engaging an audience of 250,000+ without social media.</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Benevolentia LLC, Remote</h3>
+                <p>Founder, CEO (Jan 2023 - Present)</p>
+                <ul>
+                    <li>Led the development of a web platform designed for job seekers without college degrees, enabling employers to post job openings and candidates to apply directly.</li>
+                    <li>Utilized MongoDB, NodeJS, Express, and ReactJS to create a user-friendly application with seamless interaction.</li>
+                    <li>Currently developing an AI model that meticulously tracks user interactions with job postings, including application behavior, to recommend highly tailored job opportunities based on user preferences and actions.</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>ResearcHive, Phoenix, AZ</h3>
+                <p>Founder, CEO (Jan 2024 - Present)</p>
+                <ul>
+                    <li>Launched an innovative platform enabling students and researchers to post and apply for co-author positions, facilitating collaboration across educational levels. Employed the use of MongoDB, Express, React, and NodeJS.</li>
+                    <li>Worked with a team of software engineers to build features to support peer review and project management, fostering a national research community.</li>
+                    <li>Promoted interdisciplinary collaboration by creating both remote and in-person opportunities for researchers across the U.S.</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Arizona State University</h3>
+                <p>Researcher (Jan 2016)</p>
+                <ul>
+                    <li>Working with a team under Professor Tejaswi Gowda to develop the Mesquite Mocap, an affordable and accessible motion capture system for research and education.</li>
+                    <li>Engineered a mocap device using C, JavaScript, and Arduino, significantly reducing costs to below $100,000, making advanced mocap technology accessible to a broader audience.</li>
+                    <li>Collaborated with the team to design and implement sensor fusion algorithms for precise motion tracking with minimal hardware requirements.</li>
+                    <li>Contributed to the open-source initiative by developing comprehensive documentation, enabling easy adoption by non-experts.</li>
+                </ul>
+            </div>
         </div>
-        <div class="timeline-item floating">
-            <h3>Benevolentia LLC - Founder, CEO</h3>
-            <p>Jan 2023 - Present</p>
-            <p>Created a web platform to connect job seekers without college degrees with employers, utilizing AI to recommend opportunities.</p>
-        </div>
-        <div class="timeline-item floating">
-            <h3>ResearchHive - Founder, CEO</h3>
-            <p>Jan 2024 - Present</p>
-            <p>Launched a platform for research collaboration across educational levels, supporting peer review and co-authorship.</p>
-        </div>
-        <div class="timeline-item floating">
-            <h3>Arizona State University - Researcher</h3>
-            <p>Jan 2016</p>
-            <p>Developed an affordable motion capture system using C, JavaScript, and Arduino, contributing to the open-source initiative.</p>
-        </div>
-    </div>
-</section>
-
-<section class="content" id="skills">
-    <h2>Skills</h2>
-    <p>Advanced: SQL, JavaScript, HTML/CSS, Python, C, Java</p>
-    <p>Tools: MongoDB, MySQL, Angular, React, Node, Express, GitHub, Azure, AWS</p>
-</section>
-
-<footer>
-    <p>&copy; 2024 Romir Patel. All Rights Reserved.</p>
-</footer>
-
+    </section>
+    <section id="activities">
+        <h2>Activities</h2>
+        <p>Speech & Debate Club, Chandler, AZ - Team Captain</p>
+        <p>Future Business Leaders of America, Chandler, AZ - Club Treasurer, selected as a school competitor</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Technical Skills: Advanced in SQL, Javascript, HTML/CSS, Python, C, Java</p>
+        <p>Tools: MongoDB, MySQL, Angular, React, Node, Express, Google Colab, PHP, Arduino, GitHub, Azure, AWS</p>
+        <p>Awards: FBLA Intro to Programming-Top 75 globally, Gold Presidential Service Award, 1600+ volunteer hours</p>
+    </section>
+    <footer>
+        <p>© 2024 My Portfolio</p>
+    </footer>
 </body>
 </html>
