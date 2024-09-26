@@ -3,165 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romir Patel - Portfolio</title>
+    <title>Mesquite MoCap</title>
     <style>
-        * {
+        body {
+            background-color: #1a1a1a; /* Dark background for galaxy theme */
+            color: #ffffff; /* White text for contrast */
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #000033, #000000, #333333);
-            color: white;
-            text-align: center;
-            transition: background-color 0.5s ease-in-out;
-        }
-
-        nav {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 1rem;
-        }
-
-        nav ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin: 0 1rem;
-        }
-
-        nav ul li button {
-            padding: 10px 20px;
-            background: linear-gradient(45deg, yellow, orange);
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: background 0.3s, transform 0.3s;
-        }
-
-        nav ul li button:hover {
-            background: linear-gradient(45deg, orange, red);
-            transform: scale(1.1);
-        }
-
-        section {
-            display: none;
+        header {
+            background-color: #800000; /* Maroon */
+            color: #ffffff;
             padding: 20px;
             text-align: center;
         }
-
-        .active {
-            display: block;
-        }
-
-        .timeline {
-            margin-top: 20px;
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 2px;
-            background: yellow;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -1px;
-        }
-
-        .container {
-            padding: 10px 40px;
-            position: relative;
-            width: 50%;
-        }
-
-        .container.left {
-            left: 0;
-        }
-
-        .container.right {
-            left: 50%;
-        }
-
-        .container::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            right: -10px;
-            background: yellow;
-            border-radius: 50%;
-            top: 15px;
-        }
-
-        .container.right::after {
-            left: -10px;
-        }
-
-        .container p {
+        nav {
+            background-color: #ffd700; /* Gold */
             padding: 10px;
-            background: rgba(0, 0, 0, 0.6);
-            border-radius: 5px;
-            color: white;
+            text-align: center;
         }
-
+        nav a {
+            color: #800000; /* Maroon */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #800000; /* Maroon */
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
-    <h1>Romir Patel</h1>
-    <h3>CEO | Founder | Innovator | Tech Enthusiast</h3>
-
+    <header>
+        <h1>Mesquite MoCap</h1>
+    </header>
     <nav>
-        <ul>
-            <li><button onclick="showSection('about')">About</button></li>
-            <li><button onclick="showSection('experience')">Experience</button></li>
-            <li><button onclick="showSection('skills')">Skills</button></li>
-        </ul>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#quickstart">Quick Start</a>
+        <a href="#contact">Contact</a>
     </nav>
-
-    <section id="about" class="active">
-        <h2>About Me</h2>
-        <p>Hello, I'm Romir Patel, a passionate tech innovator and entrepreneur, leading projects with a vision for a better tomorrow!</p>
-    </section>
-
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="timeline">
-            <div class="container left">
-                <p><strong>Helping Hands Corporation</strong> - Founder, CEO (Sep 2022 - Present)</p>
-                <p>Founded and led a 501(c)(3) nonprofit organization with over six figures in grants, impacting 2,500+ people globally.</p>
-            </div>
-            <div class="container right">
-                <p><strong>Benevolentia LLC</strong> - Founder, CEO (Jan 2023 - Present)</p>
-                <p>Developed a platform for job seekers without college degrees using MongoDB, NodeJS, Express, and ReactJS.</p>
-            </div>
-            <div class="container left">
-                <p><strong>ResearchHive</strong> - Founder, CEO (Jan 2024 - Present)</p>
-                <p>Launched a platform for co-author collaboration in research, fostering a national community with MongoDB, Express, React, and NodeJS.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>HTML/CSS, JavaScript, Python, MongoDB, ReactJS, NodeJS, Express, SQL</p>
-    </section>
-
-    <script>
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
-            document.getElementById(sectionId).classList.add('active');
-        }
-    </script>
+    <main>
+        <section id="home">
+            <h2>Welcome to Mesquite MoCap</h2>
+            <p>Mesquite MoCap is an open-source, low-cost motion capture process using IMU devices and JavaScript. Our goal is to make motion capture accessible and affordable for everyone.</p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>The overall scope of Mesquite MoCap is to create a system of many TTGO T-Watches to rig 3D models using motion data. Traditional mocap setups can cost upwards of $100k, but each IMU device starts at just $35.</p>
+        </section>
+        <section id="quickstart">
+            <h2>Quick Start Guide</h2>
+            <p>This guide walks you through the necessary steps to get started with Mesquite MoCap. Make sure you have all the necessary hardware purchased before proceeding.</p>
+            <ul>
+                <li>Step 1: Purchase the necessary hardware.</li>
+                <li>Step 2: Set up the IMU devices.</li>
+                <li>Step 3: Install the required software.</li>
+                <li>Step 4: Follow the instructions to start capturing motion data.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Mesquite MoCap. All rights reserved.</p>
+    </footer>
 </body>
 </html>
