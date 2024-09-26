@@ -9,13 +9,15 @@ body {
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
+    padding: 20px;
 }
 
 /* Header Styling */
 header {
-    background-color: #800000; /* Maroon */
+    background-color: #8C1D40; /* ASU Maroon */
     color: white;
-    padding: 20px 0;
+    padding: 30px 0;
+    margin-bottom: 20px;
 }
 
 .header-container {
@@ -25,33 +27,35 @@ header {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 nav ul {
     list-style: none;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 25px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #d4af37; /* Muted Gold */
+    color: #FFC627; /* ASU Gold */
 }
 
 /* Section Styling */
 section {
-    padding: 60px 0;
+    padding: 80px 0;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -63,17 +67,17 @@ section {
 /* Intro Section */
 .intro-section {
     background-color: #f4f4f4;
-    color: #800000;
+    color: #8C1D40;
     padding: 100px 0;
 }
 
 .intro-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
 }
 
 .intro-section p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
@@ -86,14 +90,14 @@ section {
 }
 
 .research-section h2 {
-    color: #800000;
-    font-size: 2.2rem;
-    margin-bottom: 20px;
+    color: #8C1D40;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
 }
 
 .research-section p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    font-size: 1.3rem;
+    margin-bottom: 40px;
 }
 
 .research-section ul {
@@ -102,11 +106,11 @@ section {
 }
 
 .research-section ul li {
-    font-size: 1.1rem;
-    padding: 10px;
+    font-size: 1.2rem;
+    padding: 15px;
     background-color: #f9f9f9;
-    margin-bottom: 10px;
-    border-left: 5px solid #d4af37;
+    margin-bottom: 15px;
+    border-left: 5px solid #FFC627;
     text-align: left;
 }
 
@@ -116,14 +120,14 @@ section {
 }
 
 .team-section h2 {
-    font-size: 2.2rem;
-    color: #800000;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #8C1D40;
+    margin-bottom: 30px;
 }
 
 .team-section p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    font-size: 1.3rem;
+    margin-bottom: 40px;
 }
 
 .team-members {
@@ -134,20 +138,20 @@ section {
 
 .team-members .member {
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     width: 30%;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .team-members .member h3 {
-    font-size: 1.5rem;
-    color: #800000;
-    margin-bottom: 10px;
+    font-size: 1.7rem;
+    color: #8C1D40;
+    margin-bottom: 15px;
 }
 
 .team-members .member p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #555;
 }
 
@@ -157,9 +161,9 @@ section {
 }
 
 .publications-section h2 {
-    color: #800000;
-    font-size: 2.2rem;
-    margin-bottom: 20px;
+    color: #8C1D40;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
 }
 
 .publications-section ul {
@@ -169,10 +173,10 @@ section {
 
 .publications-section ul li {
     background-color: #f4f4f4;
-    padding: 15px;
-    margin-bottom: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
     text-align: left;
-    border-left: 5px solid #d4af37;
+    border-left: 5px solid #FFC627;
 }
 
 .publications-section ul li i {
@@ -186,14 +190,14 @@ section {
 }
 
 .contact-section h2 {
-    color: #800000;
-    font-size: 2.2rem;
-    margin-bottom: 20px;
+    color: #8C1D40;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
 }
 
 .contact-section p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    font-size: 1.3rem;
+    margin-bottom: 40px;
 }
 
 .contact-section ul {
@@ -202,26 +206,27 @@ section {
 }
 
 .contact-section ul li {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #555;
-    padding: 10px;
+    padding: 15px;
 }
 
 .contact-section ul li a {
-    color: #800000;
+    color: #8C1D40;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .contact-section ul li a:hover {
-    color: #d4af37;
+    color: #FFC627;
 }
 
 /* Footer Styling */
 footer {
-    background-color: #800000;
+    background-color: #8C1D40;
     color: white;
-    padding: 20px 0;
+    padding: 30px 0;
+    margin-top: 20px;
 }
 
 .footer-container {
@@ -231,5 +236,5 @@ footer {
 }
 
 footer p {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
