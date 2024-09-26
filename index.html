@@ -1,29 +1,93 @@
 <!DOCTYPE html>
-/* Global Styles */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-}
-
-/* Container Styles */
-
-.container {
-    max
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesquite Inspired Site</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Container Styles */
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+
+        /* Header Styles */
+
+        header {
+            background-color: #660033; /* Maroon */
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        /* Navbar Styles */
+
+        .navbar {
+            background-color: #660033; /* Maroon */
+            padding: 1em;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .navbar a:hover {
+            color: #ffd700; /* Gold */
+        }
+
+        /* Section Styles */
+
+        section {
+            padding: 2em;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h2 {
+            color: #660033; /* Maroon */
+        }
+
+        h2, p {
+            margin-bottom: 1em;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -103,7 +167,7 @@ body {
 
     <!-- Team Section -->
     <section id="team">
-        <nav class="navbar">
+        <nav class ="navbar">
             <div class="container">
                 <ul>
                     <li><a href="#team">Team</a></li>
@@ -118,18 +182,20 @@ body {
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
+    <!-- History Section -->
+    <section id="history">
         <nav class="navbar">
             <div class="container">
                 <ul>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#history-timeline">Timeline</a></li>
+                    <li><a href="#history-awards">Awards</a></li>
                 </ul>
             </div>
         </nav>
         <div class="container">
-            <h2>Get in Touch</h2>
-            <p>This is the contact section.</p>
+            <h2>History</h2>
+            <p>This is the history section.</p>
         </div>
     </section>
 
