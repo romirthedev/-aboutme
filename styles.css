@@ -5,76 +5,231 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Header Styling */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
+    background-color: #800000; /* Maroon */
+    color: white;
+    padding: 20px 0;
+}
+
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4af37; /* Muted Gold */
+}
+
+/* Section Styling */
+section {
+    padding: 60px 0;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
 
-h1 {
-    text-align: center;
+/* Intro Section */
+.intro-section {
+    background-color: #f4f4f4;
+    color: #800000;
+    padding: 100px 0;
+}
+
+.intro-section h2 {
     font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-nav {
-    text-align: center;
-    margin-top: 1rem;
+.intro-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
 }
 
-nav ul {
+/* Research Section */
+.research-section {
+    background-color: #fff;
+    color: #333;
+}
+
+.research-section h2 {
+    color: #800000;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.research-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.research-section ul {
     list-style: none;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.research-section ul li {
     font-size: 1.1rem;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-left: 5px solid #d4af37;
+    text-align: left;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+/* Team Section */
+.team-section {
+    background-color: #f4f4f4;
 }
 
-.section {
-    padding: 2rem 0;
+.team-section h2 {
+    font-size: 2.2rem;
+    color: #800000;
+    margin-bottom: 20px;
 }
 
-.section h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.section p {
-    text-align: center;
+.team-section p {
     font-size: 1.2rem;
-    line-height: 1.6;
+    margin-bottom: 30px;
 }
 
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-members .member {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-members .member h3 {
+    font-size: 1.5rem;
+    color: #800000;
+    margin-bottom: 10px;
+}
+
+.team-members .member p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Publications Section */
+.publications-section {
+    background-color: #fff;
+}
+
+.publications-section h2 {
+    color: #800000;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.publications-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-section ul li {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-left: 5px solid #d4af37;
+}
+
+.publications-section ul li i {
+    font-style: italic;
+    color: #555;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f4f4f4;
+}
+
+.contact-section h2 {
+    color: #800000;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-section ul li {
+    font-size: 1.1rem;
+    color: #555;
+    padding: 10px;
+}
+
+.contact-section ul li a {
+    color: #800000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-section ul li a:hover {
+    color: #d4af37;
+}
+
+/* Footer Styling */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #800000;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
 }
 
 footer p {
-    margin: 0;
+    font-size: 1rem;
 }
